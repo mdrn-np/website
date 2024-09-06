@@ -1,0 +1,40 @@
+
+
+.heading{
+    @apply text-[#484848] text-5xl font-bold tracking-widest cursor-pointer
+}
+
+.heading span{
+    @apply transition-all  duration-500 ease-linear
+}
+
+.heading:hover span:nth-child(1){
+   @apply mx-[5px]
+  }
+
+ .heading:hover span:nth-child(1):after{
+    content: ",";
+  }
+
+  .heading:hover span:nth-child(2){
+    @apply mx-[5px]
+  } 
+  
+  :root{
+    --accent: #3C1874;
+    --britsec: #DE354C;
+
+  }
+  .heading:hover span:nth-child(1){
+    color:var(--accent);
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff, 
+                 0 0 40px #fff;
+  }
+
+  .heading:hover span:nth-child(2){
+    color:var(--britsec);
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff, 
+                 0 0 40px #fff;
+  }
