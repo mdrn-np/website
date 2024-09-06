@@ -1,15 +1,14 @@
-import { useState } from 'react'
 
 import './App.css'
-import ParticlesComponent from './components/heroConfig/particles_Config'
+import "NavBar" from './navBar.jsx'
 
 function App() {
- 
+
   return (
     <>
-      <ParticlesComponent/>
+   <NavBar/>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
