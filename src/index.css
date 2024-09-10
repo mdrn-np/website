@@ -4,6 +4,6 @@
 
 @layer base {
   body {
-    @apply px-20;
+    @apply px-8 sm:px-20;
   }
 }
