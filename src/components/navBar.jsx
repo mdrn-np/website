@@ -28,7 +28,7 @@ export default function NavBar() {
           ? navLinks.map((navItems) => (
               <li
                 key={navItems.id}
-                className="max-[1020px]:hover:bg-accent lg:hover:text-accent lg:hover:font-extrabold w-full flex justify-center items-center h-10"
+                className="max-[1020px]:hover:bg-accent text-primary lg:text-black lg:hover:text-accent lg:hover:font-extrabold w-full flex justify-center items-center h-10"
               >
                 <a href={navItems.id}>
                   <p>{navItems.title}</p>
@@ -37,13 +37,13 @@ export default function NavBar() {
             ))
           : null}
       </ul>
-      <div className="flex items-center justify-center gap-2">
-        <button className="bg-accent w-28 h-12 text-primary rounded-lg order-last hover:contrast-75 mx-10 lg:mx-0">
+      <div className="flex items-center justify-center">
+        <button className="bg-accent w-28 h-12 text-primary rounded-lg order-last hover:contrast-75 mr-4 lg:mx-0">
           Join Us
         </button>
         <button
           onClick={() => toggleNavbar(navOpen)}
-          className="order-last flex-initial lg:hidden focus:border-accent focus:bg-opacity-80 focus:bg-accent p-[10px] rounded-xl"
+          className="order-last flex-initial p-2 lg:hidden focus:border-accent focus:bg-opacity-80 focus:bg-accent rounded"
         >
           {navOpen ? (
             <IoCloseOutline className="w-6 h-6" />
