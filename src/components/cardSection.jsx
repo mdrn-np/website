@@ -10,9 +10,9 @@ export default function CardSection(){
                     <h1 className="text-3xl font-extrabold text-accent">What We Offer</h1>
               </div>
               <div className="mt-32 grid grid-cols-1 gap-8 md:grind-cols-2 lg:grid-cols-3">
-                  <CardDetail title="Uno" text="Something we do"/>
-                  <CardDetail title="Dos" text="Something we do"/>
-                  <CardDetail title="Tres" text="Something we do"/>
+                  <CardDetail title="Uno" text="Something we do no1"/>
+                  <CardDetail title="Dos" text="Something we do no2 "/>
+                  <CardDetail title="Tres" text="Something we do no3 "/>
               </div>
           </div>
       </section>
