@@ -23,7 +23,7 @@ export const project = [
     name: "Name",
     tags: ["tag1", "tag2"],
     description:
-      "A longggggggggggggggggggggggggggggggggggggggggggggggg description of the project",
+      "A biggggg description of the project. This project aids your comunity with every little possible things.",
     link: "https://google.com",
   },
   {

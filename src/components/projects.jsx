@@ -13,7 +13,7 @@ function ProjectContainer({ img, name, desc, link, tags }) {
         className="rounded-xl max-md:hidden md:w-[40%] h-auto"
       />
 
-      <div className="details w-full h-full p-4 flex-row shadow-[0_4px_30px_rgba(0,0,0,0.5)] rounded-lg backdrop-blur-sm hover:backdrop-blur-[5px]">
+      <div className="details w-full h-full p-4 shadow-[0_4px_30px_rgba(0,0,0,0.5)] rounded-lg backdrop-blur-sm hover:backdrop-blur-[5px]">
         <h3 className="font-extrabold text-6xl">Name</h3>
 
         {tags
@@ -24,7 +24,9 @@ function ProjectContainer({ img, name, desc, link, tags }) {
             ))
           : null}
 
-        <p className="my-4 max-md:text-black max-md:font-semibold">{desc}</p>
+        <p className="my-4 max-md:text-black max-md:font-semibold text-justify w-full">
+          {desc}
+        </p>
 
         <button className="order-last flex items-center gap-1 hover:gap-2">
           <a href="http://" target="_blank" rel="noopener noreferrer">
