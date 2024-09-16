@@ -5,7 +5,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCloseOutline } from "react-icons/io5";
 import "./navbar.css";
 
-export default function Navbar() {
+export default function NavBar() {
   const [navOpen, setNavOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -33,12 +33,12 @@ export default function Navbar() {
     <div
       className={`fixed left-1/2 transform -translate-x-1/2 w-11/12 max-w-7xl z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-[#B6BBC2] shadow-lg rounded-2xl p-2 top-4"
-          : "bg-transparent p-4 top-0"
+          ? "bg-[#B6BBC2] shadow-lg rounded-2xl p-2 top-4 border border-borderSoft translate-y-6 outline-0 !py-3 lg:!py-3.5 pr-3 pl-4 sm:pl-6 !bg-fill lg:!w-[940px] 2xl:!w-[1040px]"
+          : "bg-transparent top-0 border border-transparent py-4 sm:py-5 xl:py-6"
       }`}
     >
       <div
-        className={`flex justify-between items-center text-xl transition-all duration-300 ${
+        className={`flex items-center justify-between text-xl transition-all duration-300 ${
           scrolled ? "gap-1 p-2" : "gap-6 p-4"
         }`}
       >
@@ -46,7 +46,7 @@ export default function Navbar() {
           src={logo}
           alt="logo's png"
           className={`max-h-20 w-20 flex-initial object-contain cursor-pointer hover:animate-jiggle transition-all duration-300 ${
-            scrolled ? "max-h-18 w-18" : "max-h-24 w-24"
+            scrolled ? "max-h-16 w-16" : "max-h-20 w-20"
           }`}
           onClick={() => (window.location.href = "#home")}
         />
