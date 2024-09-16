@@ -5,7 +5,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCloseOutline } from "react-icons/io5";
 import "./navbar.css";
 
-export default function NavBar() {
+export default function Navbar() {
   const [navOpen, setNavOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
