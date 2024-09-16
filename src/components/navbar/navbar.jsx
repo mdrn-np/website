@@ -69,11 +69,17 @@ export default function NavBar() {
             : null}
         </ul>
         <div className="flex items-center justify-center">
-          <button className="bg-gradient-to-r from-indigo-900 to-violet-700 text-primary rounded-lg order-last hover:contrast-75 lg:mx-0 transition-all duration-300 transform hover:pl-4 w-36 h-10">
-            <span className="transition-all duration-300 transform group-hover:mr-2">
+          <button
+            className={`rounded-md order-last transition-all duration-300 transform ${
+              scrolled
+                ? "bg-gradient-to-r shadow-md from-indigo-900 to-violet-700 py-2.5 px-6 text-md items-center gap-2.5 cursor-pointer transition-backgroundColor duration-300 ease-in-out disabled:contrast-75 border text-primary focus:border bg-surface border-borderSoft hover:contrast-75 hidden sm:flex ml-auto lg:ml-0 w-40 h-12"
+                : "bg-primary  shadow-md group py-[9px] px-6 rounded-md text-md items-center gap-2.5 cursor-pointer transition-backgroundColor duration-300 ease-in-out disabled:contrast-75 border text-black focus:border bg-surface border-borderSoft hover:contrast-75 hidden sm:flex ml-auto lg:ml-0 w-40 h-12"
+            }`}
+          >
+            <span className="transition-all duration-300 transform group-hover:mr-1 font-semibold">
               Join us
             </span>
-            <span className="transition-all duration-300 transform group-hover:ml-2">
+            <span className="transition-all duration-300 transform group-hover:ml-1">
               →
             </span>
           </button>
