@@ -1,3 +1,4 @@
+import ParticlesComponent from "../heroConfig/particles_Config"
 import "./hero.css"
 
 
