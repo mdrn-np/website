@@ -1,6 +1,6 @@
 import Hero from "./components/hero/hero";
 import ParticlesComponent from "./components/heroConfig/particles_Config";
-import NavBar from "./components/navbar/navBar";
+import NavBar from "./components/navbar/navbar";
 import Projects from "./components/projects";
 import CardSection from "./components/cardSection";
 
