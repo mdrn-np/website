@@ -13,7 +13,7 @@
   }
 
  .heading:hover span:nth-child(1):after{
-    content: ",";
+    content: " ";
   }
 
   .heading:hover span:nth-child(2){
