@@ -6,4 +6,8 @@
   body {
     @apply px-8 sm:px-20;
   }
+
+  button {
+    @apply bg-accent p-2 rounded-lg hover:contrast-125;
+  }
 }
