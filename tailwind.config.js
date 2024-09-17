@@ -11,9 +11,6 @@ export default {
         additional: "#283747",
       },
     },
-    fontFamily: {
-      inter: ["Inter", "sans-serif"],
-    },
   },
   plugins: [],
 };

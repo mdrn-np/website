@@ -1,42 +1,40 @@
-.heading {
-    @apply text-[#484848] text-5xl font-bold tracking-widest cursor-pointer;
+
+
+.heading{
+    @apply text-[#484848] text-5xl font-bold tracking-widest cursor-pointer
 }
 
-.heading span {
-    @apply transition-all duration-500 ease-linear relative;
+.heading span{
+    @apply transition-all  duration-500 ease-linear
 }
 
-.heading span:nth-child(1)::after {
+.heading:hover span:nth-child(1){
+   @apply mx-[5px]
+  }
+
+ .heading:hover span:nth-child(1):after{
     content: ",";
-    font-size: 0.01em;
-    position: absolute;
-    top: 0; 
-    transition: font-size 0.3s ease-in-out; 
-}
+  }
 
-.heading:hover span:nth-child(1)::after {
-    font-size: 1em;
-}
-
-.heading:hover span:nth-child(1) {
-    @apply mx-[10px];
-}
-
-.heading:hover span:nth-child(2) {
-    @apply mx-[10px];
-}
-
-:root {
+  .heading:hover span:nth-child(2){
+    @apply mx-[5px]
+  } 
+  
+  :root{
     --accent: #3C1874;
     --britsec: #DE354C;
-}
 
-.heading:hover span:nth-child(1) {
-    color: var(--accent);
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
-}
+  }
+  .heading:hover span:nth-child(1){
+    color:var(--accent);
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff, 
+                 0 0 40px #fff;
+  }
 
-.heading:hover span:nth-child(2) {
-    color: var(--britsec);
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
-}
+  .heading:hover span:nth-child(2){
+    color:var(--britsec);
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff, 
+                 0 0 40px #fff;
+  }

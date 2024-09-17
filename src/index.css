@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply px-8 sm:px-20 font-inter;
+    @apply px-8 sm:px-20;
   }
 
   button {
