@@ -3,8 +3,12 @@
 @tailwind utilities;
 
 @layer base {
+  * {
+    @apply box-border;
+  }
+
   body {
-    @apply px-8 sm:px-20 font-inter;
+    @apply px-16 sm:px-32;
   }
 
   button {
