@@ -1,0 +1,28 @@
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+}
+
+.hover\:animate-heartbeat:hover {
+  animation: heartbeat 1s infinite linear alternate both running;
+}
+
+@keyframes jiggle {
+  0%, 100% {
+    transform: rotate(0) scale(1);
+  }
+  25% {
+    transform: rotate(-5deg) scale(1.1);
+  }
+  75% {
+    transform: rotate(5deg) scale(1.1);
+  }
+}
+
+.hover\:animate-jiggle:hover {
+  animation: jiggle 0.5s 1 linear;
+}

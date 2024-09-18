@@ -1,21 +1,17 @@
 import Hero from "./components/hero/hero";
 import ParticlesComponent from "./components/heroConfig/particles_Config";
-import NavBar from "./components/navBar";
-
 import Projects from "./components/projects";
-
-import cardSection from "./components/cardSection";
 import CardSection from "./components/cardSection";
-
+import Navbar from "./components/navbar/navbar";
 
 function App() {
   return (
     <>
-      <NavBar />
+      <Navbar />
       <ParticlesComponent id="particles" />
-      <CardSection/>
+      <Hero />
+      <CardSection />
       <Projects />
-
     </>
   );
 }
