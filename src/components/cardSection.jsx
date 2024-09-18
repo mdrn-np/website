@@ -11,7 +11,7 @@ export default function CardSection() {
               What We Offer
             </h1>
           </div>
-          <div className="mt-32 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {data.map((item) => (
               <CardDetail
                 key={item.id}

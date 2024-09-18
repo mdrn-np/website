@@ -1,4 +1,7 @@
 import tree from './images/tree.png';
+import analytics from './images/analytics.png'
+import openSource from './images/open-source.png'
+import working from './images/networking.png'
 
 export const navLinks = [
   {
@@ -43,19 +46,19 @@ export const data = [
     id: 1,
     title: "Research Papers",
     text: "Our club members actively engage in writing and publishing research papers in various scientific journals.",
-    image: tree,
+    image: analytics,
   },
   {
     id: 2,
     title: "Open Source Development",
     text: "We contribute to open-source projects, helping to build and improve software that benefits the community.",
-    image: tree,
+    image: openSource,
   },
   {
     id: 3,
     title: "Voluntary Work",
     text: "Our members participate in voluntary work, organizing events and activities that promote science and education.",
-    image: tree,
+    image: working,
   },
 ];
 
