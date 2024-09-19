@@ -1,7 +1,10 @@
-import tree from './images/tree.png';
+
 import analytics from './images/analytics.png'
 import openSource from './images/open-source.png'
 import working from './images/networking.png'
+import wallet from './images/wallet.png'
+import tea from './images/cup-of-drink.png'
+
 
 export const navLinks = [
   {
@@ -62,3 +65,22 @@ export const data = [
   },
 ];
 
+export const sponsers = [
+  {
+    id: 1,
+    image: wallet,
+  },
+  {
+    id: 2,
+    image: tea ,
+  },
+  {
+    id: 3,
+    image: wallet ,
+  },
+  {
+    id: 4,
+    image: tea ,
+  },
+
+]
