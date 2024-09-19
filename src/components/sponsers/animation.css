@@ -1,0 +1,27 @@
+
+@keyframes scrollAnim{
+    from{
+        left: translateX(0);
+
+    }
+    to{
+        transform: translateX(-100%);
+    }
+
+}
+
+.scrollDiv{
+    animation: scrollAnim 30s linear infinite;
+    white-space: nowrap;
+    
+}
+
+.vignette{
+    mask-image: linear-gradient(
+    to right,
+    hsl(0 0% 0% / 0),
+    hsl(0 0% 0% / 1) 10%,
+    hsl(0 0% 0% / 1) 90%,
+    hsl(0 0% 0% / 0)
+  );
+}
