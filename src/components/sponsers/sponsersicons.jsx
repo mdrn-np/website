@@ -6,7 +6,7 @@ export default function  SponserIcon(){
     return(
      
 
-        <div className="scrollDiv flex-shrink-0 flex items-center justify-center w-[100%]">
+        <div className="scrollDiv flex-shrink-0 flex items-center justify-around w-[100%]">
         {
             sponsers.map((val)=>(
                 <Tilt tiltMaxAngleX={"9"} tiltMaxAngleY={"9"}>
