@@ -1,14 +1,17 @@
+import React, { useRef } from "react";
+import SponserIcon from "./sponsersicons.jsx";
+import "./animation.css";
 
-import SponserIcon from './sponsersicons.jsx'
-import './animation.css'
+export default function SponserDetail() {
+  const scrollRef = useRef(null);
 
-export default function SponserDetail(){
-    return(
-        <div className="w-[100%] h-fit flex items-center justify-center flex-col">
-            <div className="vignette flex w-[75rem] select-none overflow-hidden">
-                <SponserIcon/>
-                <SponserIcon/>
-            </div>
+  return (
+    <div className="w-full h-fit flex items-center justify-center flex-col">
+      <div className="vignette flex w-full max-w-7xl select-none overflow-x-auto overflow-y-hidden">
+        <div className="flex w-full" ref={scrollRef}>
+          <SponserIcon />
         </div>
-    )
+      </div>
+    </div>
+  );
 }

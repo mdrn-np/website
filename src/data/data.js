@@ -65,22 +65,26 @@ export const data = [
   },
 ];
 
-export const sponsers = [
+export const sponser_benifits = [
   {
     id: 1,
     image: wallet,
+    desc: "Your logo will be displayed on our website and promotional materials.",
   },
   {
     id: 2,
     image: tea ,
+    desc: "You will have the opportunity to sponsor and participate in our events.",
   },
   {
     id: 3,
     image: wallet ,
+    desc: "You will have access to our network of professionals and students.",
   },
   {
     id: 4,
     image: tea ,
+    desc: "You will be able to promote your products and services to our members.",
   },
 
 ]

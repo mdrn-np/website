@@ -1,27 +1,36 @@
-
-@keyframes scrollAnim{
-    from{
-        left: translateX(0);
-
-    }
-    to{
-        transform: translateX(-100%);
-    }
-
+@keyframes scrollAnim {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
-.scrollDiv{
-    animation: scrollAnim 30s linear infinite;
-    white-space: nowrap;
-    
+.scrollContainer {
+  overflow-x: hidden; /* Ensure horizontal overflow is hidden */
+  overflow-y: hidden; /* Prevent vertical overflow */
+  padding: 2rem; 
 }
 
-.vignette{
-    mask-image: linear-gradient(
+.scrollDiv {
+  animation: scrollAnim 30s linear infinite;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .scrollDiv {
+    animation-duration: 18s; 
+  }
+}
+
+.vignette {
+  mask-image: linear-gradient(
     to right,
     hsl(0 0% 0% / 0),
-    hsl(0 0% 0% / 1) 10%,
-    hsl(0 0% 0% / 1) 90%,
+    hsl(0 0% 0% / 1) 5%,
+    hsl(0 0% 0% / 1) 95%,
     hsl(0 0% 0% / 0)
   );
+  overflow: hidden;
 }
