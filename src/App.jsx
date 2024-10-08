@@ -3,6 +3,7 @@ import ParticlesComponent from "./components/heroConfig/particles_Config";
 import Projects from "./components/projects";
 import CardSection from "./components/cardSection";
 import Navbar from "./components/navbar/navbar";
+import Timeline from "./components/timeline/timeline";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Hero />
       <CardSection />
       <Projects />
+      <Timeline />
     </>
   );
 }
