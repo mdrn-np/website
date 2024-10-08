@@ -1,4 +1,4 @@
-
+import tree from "./images/tree.png";
 import analytics from './images/analytics.png'
 import openSource from './images/open-source.png'
 import working from './images/networking.png'
@@ -24,7 +24,6 @@ export const navLinks = [
     title: "Contact Us",
   },
 ];
-
 
 export const project = [
   {
@@ -62,6 +61,26 @@ export const data = [
     title: "Voluntary Work",
     text: "Our members participate in voluntary work, organizing events and activities that promote science and education.",
     image: working,
+  },
+];
+
+
+export const timelineEvents = [
+  {
+    id: 1,
+    year: "2024",
+    title: "Start of our jounery",
+    description:
+      "This is when we got the idea to start our journey of MDRN. Working with group of friends we started all this.",
+    image: "https://picsum.photos/",
+  },
+  {
+    id: 2,
+    year: "2024",
+    title: "Something idk.",
+    description:
+      "This is when we got the idea to start our journey of MDRN. Working with group of friends we started all this.",
+    image: "https://picsum.photos/",
   },
 ];
 

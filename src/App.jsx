@@ -3,6 +3,7 @@ import ParticlesComponent from "./components/heroConfig/particles_Config";
 import Projects from "./components/projects/projects";
 import CardSection from "./components/cards/cardSection";
 import Navbar from "./components/navbar/navbar";
+import Timeline from "./components/timeline/timeline";
 import Sponsers from "./components/sponsers/sponser";
 
 function App() {
@@ -13,37 +14,8 @@ function App() {
       <Hero />
       <CardSection />
       <Projects />
+      <Timeline />
       <Sponsers />
-      <div className="h-20">Test div</div>
-      <div className="h-20">Test div</div>
-      <div className="h-20">Test div</div>
-      <div className="h-20">Test div</div>
-      <div className="h-20">Test div</div>
-      <div className="h-20">Test div</div>
-      <div className="h-20">Test div</div>
-      <div className="h-20">Test div</div>
-      <div className="h-20">Test div</div>
-      <div className="h-20">Test div</div>
-      <div className="h-20">Test div</div>
-      <div className="h-20">Test div</div>
-      <div className="h-20">Test div</div>
-      <div className="h-20">Test div</div>
-      <div className="h-20">Test div</div>
-      <div className="h-20">Test div</div>
-      <div className="h-20">Test div</div>
-      <div className="h-20">Test div</div>
-      <div className="h-20">Test div</div>
-      <div className="h-20">Test div</div>
-      <div className="h-20">Test div</div>
-      <div className="h-20">Test div</div>
-      <div className="h-20">Test div</div>
-      <div className="h-20">Test div</div>
-      <div className="h-20">Test div</div>
-      <div className="h-20">Test div</div>
-      <div className="h-20">Test div</div>
-      <div className="h-20">Test div</div>
-      <div className="h-20">Test div</div>
-      <div className="h-20">Test div</div>
     </>
   );
 }
