@@ -1,5 +1,4 @@
-import { space } from "postcss/lib/list";
-import { project } from "../data/data.js";
+import { project } from "../../data/data.js";
 import { FaArrowRight } from "react-icons/fa";
 
 function ProjectContainer({ img, name, desc, link, tags }) {
@@ -16,11 +15,14 @@ function ProjectContainer({ img, name, desc, link, tags }) {
       </div>
 
       <div className="details w-full h-full px-6 group-hover/main:backdrop-blur-[5px] sm:w-[80%]">
-        <h3 className="text-grey-900 font-extrabold text-6xl">Name</h3>
+        <h3 className="text-grey-900 font-extrabold text-6xl">{name}</h3>
 
         {tags
           ? tags.map((tag) => (
-              <span className="before:content-['#'] mr-2 text-accent font-bold p-0 m-0">
+              <span
+                key={tag}
+                className="before:content-['#'] mr-2 text-accent font-bold p-0 m-0"
+              >
                 {tag}
               </span>
             ))
@@ -31,7 +33,7 @@ function ProjectContainer({ img, name, desc, link, tags }) {
         </p>
 
         <button className="text-primary order-last flex items-center gap-1 group-hover/main:gap-4 hover:gap-2 transition-gap duration-300 ease-in-out">
-          <a href="http://" target="_blank" rel="noopener noreferrer">
+          <a href={link} target="_blank" rel="noopener noreferrer">
             View Project{" "}
           </a>
           <span>
@@ -45,15 +47,15 @@ function ProjectContainer({ img, name, desc, link, tags }) {
 
 export default function Projects() {
   return (
-    <div>
+    <div className="max-w-screen-lg mx-auto px-4">
       <h1 className="text-center heading font-semibold my-4">Our Projects</h1>
       {project
         ? project.map((details) => {
             const { image, name, tags, description, link } = details;
-            console.log(image);
 
             return (
               <ProjectContainer
+                key={name}
                 img={image}
                 name={name}
                 tags={tags}

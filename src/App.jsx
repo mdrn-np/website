@@ -1,9 +1,10 @@
 import Hero from "./components/hero/hero";
 import ParticlesComponent from "./components/heroConfig/particles_Config";
-import Projects from "./components/projects";
-import CardSection from "./components/cardSection";
+import Projects from "./components/projects/projects";
+import CardSection from "./components/cards/cardSection";
 import Navbar from "./components/navbar/navbar";
 import Timeline from "./components/timeline/timeline";
+import Sponsers from "./components/sponsers/sponser";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <CardSection />
       <Projects />
       <Timeline />
+      <Sponsers />
     </>
   );
 }
