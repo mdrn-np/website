@@ -1,4 +1,3 @@
-import tree from "./images/tree.png";
 import analytics from './images/analytics.png'
 import openSource from './images/open-source.png'
 import working from './images/networking.png'

@@ -1,0 +1,24 @@
+.timeline::before {
+  height: 100%;
+  width: 5px;
+  background-color: red;
+}
+
+.cardContainer {
+  position: relative;
+  overflow: hidden;
+}
+
+.details {
+  opacity: 0;
+  max-height: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, max-height 0.3s ease, transform 0.3s ease;
+}
+
+.group:hover .details {
+  opacity: 1;
+  max-height: 1000px; /* Large enough to show the content */
+  transform: translateY(0);
+}
+
