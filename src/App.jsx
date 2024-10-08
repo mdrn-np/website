@@ -13,7 +13,37 @@ function App() {
       <Hero />
       <CardSection />
       <Projects />
-      <Sponsers/>
+      <Sponsers />
+      <div className="h-20">Test div</div>
+      <div className="h-20">Test div</div>
+      <div className="h-20">Test div</div>
+      <div className="h-20">Test div</div>
+      <div className="h-20">Test div</div>
+      <div className="h-20">Test div</div>
+      <div className="h-20">Test div</div>
+      <div className="h-20">Test div</div>
+      <div className="h-20">Test div</div>
+      <div className="h-20">Test div</div>
+      <div className="h-20">Test div</div>
+      <div className="h-20">Test div</div>
+      <div className="h-20">Test div</div>
+      <div className="h-20">Test div</div>
+      <div className="h-20">Test div</div>
+      <div className="h-20">Test div</div>
+      <div className="h-20">Test div</div>
+      <div className="h-20">Test div</div>
+      <div className="h-20">Test div</div>
+      <div className="h-20">Test div</div>
+      <div className="h-20">Test div</div>
+      <div className="h-20">Test div</div>
+      <div className="h-20">Test div</div>
+      <div className="h-20">Test div</div>
+      <div className="h-20">Test div</div>
+      <div className="h-20">Test div</div>
+      <div className="h-20">Test div</div>
+      <div className="h-20">Test div</div>
+      <div className="h-20">Test div</div>
+      <div className="h-20">Test div</div>
     </>
   );
 }
