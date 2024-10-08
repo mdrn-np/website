@@ -45,7 +45,7 @@ export default function NavBar() {
         <img
           src={logo}
           alt="logo's png"
-          className={`h-14 w-31 flex-initial object-contain cursor-pointer hover:animate-jiggle transition-all duration-300`}
+          className={`h-14 w-auto flex-initial object-contain cursor-pointer hover:animate-jiggle transition-all duration-300`}
           onClick={() => (window.location.href = "#home")}
         />
         <ul
