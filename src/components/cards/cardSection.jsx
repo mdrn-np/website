@@ -1,10 +1,10 @@
-import { data } from "../data/data";
+import { data } from "../../data/data";
 import CardDetail from "./cardDetail";
 
 export default function CardSection() {
   return (
     <div>
-      <section className="pb-[300px] py-16">
+      <section className="pb-[60px] py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-3xl font-extrabold text-accent">
