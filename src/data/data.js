@@ -65,7 +65,7 @@ export const data = [
   },
 ];
 
-export const sponser_benifits = [
+export const sponsers = [
   {
     id: 1,
     image: wallet,

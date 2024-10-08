@@ -8,9 +8,9 @@ export default function SponserDetail() {
       <div className="vignette flex w-full sm:w-3/4 lg:w-1/2 select-none overflow-hidden overflow-y-hidden">
         <Marquee
           gradient={true}
-          gradientWidth={50} // Default gradient width
+          gradientWidth={50}
           pauseOnHover={true}
-          speed={10}
+          speed={30}
         >
           <SponserIcon />
         </Marquee>

@@ -10,8 +10,8 @@ export default function SponserIcon() {
           <div
             className="grid place-items-center"
             style={{
-              width: "clamp(16rem, 1rem + 30vmin, 20rem)", // Increased minimum size for mobile
-              padding: "calc(clamp(16rem, 1rem + 30vmin, 20rem)/10)", // Adjusted padding accordingly
+              width: "clamp(16rem, 1rem + 30vmin, 20rem)",
+              padding: "calc(clamp(16rem, 1rem + 30vmin, 20rem)/10)",
             }}
           >
             <img
