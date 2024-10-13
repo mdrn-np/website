@@ -5,6 +5,7 @@ import CardSection from "./components/cards/cardSection";
 import Navbar from "./components/navbar/navbar";
 import Timeline from "./components/timeline/timeline";
 import Sponsers from "./components/sponsers/sponser";
+import Footer from "./components/footer/footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Projects />
       <Timeline />
       <Sponsers />
+      <Footer />
     </>
   );
 }
