@@ -30,8 +30,8 @@ export default function Footer() {
   return (
     <div className="h-auto mx-[-4rem] sm:mx-[-8rem] relative rounded-lg shadow-lg bg-gray-400 bg-clip-padding bg-opacity-10  backdrop-filter backdrop-blur-sm px-16 sm:px-32 py-20">
       <div className="flex flex-col gap-8">
-        <div className="flex flex-row justify-between">
-          <div>
+        <div className="flex flex-col md:flex-row justify-between">
+          <div className="mb-10">
             <h1 className="heading mb-2 tracking-normal text-secondary">
               Tech For Tomorrow, Actions for Today
             </h1>
@@ -40,7 +40,7 @@ export default function Footer() {
               always ready to help you and your tech journey.
             </p>
           </div>
-          <div className="contact text-secondary w-[40%] flex flex-col content-end flex-wrap">
+          <div className="contact text-secondary w-[40%] flex flex-col md:content-end flex-wrap">
             <h3 className="text-2xl mb-2 font-extrabold">Contact Us</h3>
             <ul>
               <li className="flex flex-row items-center justify-start gap-2">
@@ -55,7 +55,7 @@ export default function Footer() {
         <div className="flex flex-row w-full justify-between gap-4">
           <img src={logo} alt="logo" className="w-48" />
 
-          <div className="nav flex flex-row w-full items-center justify-between mx-8">
+          <div className="nav flex flex-row w-full items-center justify-between mx-8 max-lg:hidden">
             {navLinks
               ? navLinks.map((navItems) => (
                   <li
