@@ -3,8 +3,8 @@ import "./hero.css";
 
 export default function Hero() {
   return (
-    <div class="grid place-items-center h-[30rem]">
-      <div class=" p-4 ">
+    <div className="grid place-items-center h-[30rem]">
+      <div className=" p-4 ">
         <h1 className="heading font-bold text-center">
           <span>Tech For Tomorrow</span>
           <span className="2"> Actions for Today</span>

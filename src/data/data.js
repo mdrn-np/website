@@ -35,7 +35,7 @@ export const project = [
   },
   {
     image: "https://picsum.photos/",
-    name: "Name",
+    name: "Something",
     tags: ["tag1", "tag2"],
     description: "Cool project",
     link: "https://google.com",
