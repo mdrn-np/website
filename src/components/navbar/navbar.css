@@ -1,18 +1,20 @@
 /* navbar.css */
-.navbar {
-  transform: translateX(200%);
-}
+@media (max-width: 1020px) {
+  .navbar {
+    transform: translateX(200%);
+  }
 
-.navbar.mounted {
-  transition-property: transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
+  .navbar.mounted {
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
 
-.navbar-open {
-  transform: translateX(0);
-}
+  .navbar-open {
+    transform: translateX(0);
+  }
 
-.navbar-closed {
-  transform: translateX(200%);
+  .navbar-closed {
+    transform: translateX(200%);
+  }
 }
