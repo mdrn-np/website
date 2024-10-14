@@ -3,24 +3,21 @@ import logo from "../../assets/mdrn-logo-side.png";
 import { useState, useEffect } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCloseOutline } from "react-icons/io5";
+import useIsMounted from "./useIsMounted"; // Adjust the import path as needed
 import "./navbar.css";
 
 export default function NavBar() {
   const [navOpen, setNavOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const isMounted = useIsMounted();
 
-  function toggleNavbar(navOpen) {
-    setNavOpen(!navOpen);
-    console.log(navOpen);
+  function toggleNavbar() {
+    setNavOpen((prev) => !prev);
   }
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(window.scrollY > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -44,27 +41,31 @@ export default function NavBar() {
       >
         <img
           src={logo}
-          alt="logo's png"
-          className={`h-14 w-auto flex-initial object-contain cursor-pointer hover:animate-jiggle transition-all duration-300`}
+          alt="logo"
+          className="h-14 w-auto flex-initial object-contain cursor-pointer hover:animate-jiggle transition-all duration-300"
           onClick={() => (window.location.href = "#home")}
         />
         <ul
-          className={`${
-            navOpen ? "flex" : "hidden"
-          } basis-1/2 flex-col lg:flex-row lg:flex gap-1 justify-center max-[1020px]:p-4 max-[1020px]:fixed max-[1020px]:top-24 max-[1020px]:left-[10%] bg-secondary lg:bg-transparent w-[80%] `}
+          className={`navbar ${
+            isMounted.current && window.innerWidth <= 1020
+              ? navOpen
+                ? "navbar-open"
+                : "navbar-closed"
+              : ""
+          } ${
+            isMounted.current ? "mounted" : ""
+          } basis-1/2 flex-col lg:flex-row lg:flex gap-1 justify-center max-[1020px]:p-4 max-[1020px]:fixed max-[1020px]:top-24 max-[1020px]:left-[10%] bg-secondary lg:bg-transparent w-[80%]`}
         >
-          {navLinks
-            ? navLinks.map((navItems) => (
-                <li
-                  key={navItems.id}
-                  className="max-[1020px]:hover:bg-accent text-primary lg:text-black lg:hover:text-accent w-full flex justify-center items-center h-8 transition-all duration-300 transform hover:text-2xl"
-                >
-                  <a href={navItems.id}>
-                    <p>{navItems.title}</p>
-                  </a>
-                </li>
-              ))
-            : null}
+          {navLinks.map((navItems) => (
+            <li
+              key={navItems.id}
+              className="max-[1020px]:hover:bg-secondary text-primary lg:text-black lg:hover:text-secondary w-full flex justify-center items-center h-8 transition-all duration-300 transform hover:scale-105"
+            >
+              <a href={navItems.id}>
+                <p>{navItems.title}</p>
+              </a>
+            </li>
+          ))}
         </ul>
         <div className="flex items-center justify-center">
           <button
@@ -86,8 +87,8 @@ export default function NavBar() {
             </span>
           </button>
           <button
-            onClick={() => toggleNavbar(navOpen)}
-            className="order-last flex-initial p-2 lg:hidden focus:border-accent focus:bg-opacity-80 focus:bg-accent rounded transition-all duration-300 transform hover:scale-105 hover:bg-accent hover:bg-opacity-90"
+            onClick={toggleNavbar}
+            className="order-last flex-initial p-2 lg:hidden focus:border-secondary focus:bg-opacity-80 focus:bg-secondary rounded transition-all duration-300 transform hover:scale-105 hover:bg-secondary hover:bg-opacity-90"
           >
             {navOpen ? (
               <IoCloseOutline className="w-6 h-6" />

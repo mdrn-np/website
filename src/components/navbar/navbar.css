@@ -1,28 +1,18 @@
-@keyframes heartbeat {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.4);
-  }
+/* navbar.css */
+.navbar {
+  transform: translateX(200%);
 }
 
-.hover\:animate-heartbeat:hover {
-  animation: heartbeat 1s infinite linear alternate both running;
+.navbar.mounted {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
-@keyframes jiggle {
-  0%, 100% {
-    transform: rotate(0) scale(1);
-  }
-  25% {
-    transform: rotate(-5deg) scale(1.1);
-  }
-  75% {
-    transform: rotate(5deg) scale(1.1);
-  }
+.navbar-open {
+  transform: translateX(0);
 }
 
-.hover\:animate-jiggle:hover {
-  animation: jiggle 0.5s 1 linear;
+.navbar-closed {
+  transform: translateX(200%);
 }
