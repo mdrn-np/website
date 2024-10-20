@@ -1,6 +1,8 @@
+import PropTypes from 'prop-types';
 import { timelineEvents } from "../../data/data";
 import "./timeline.css";
 
+// eslint-disable-next-line no-unused-vars
 function TimeLineCard({ id, year, title, desc, img }) {
   return (
     <div className="group cardContainer rounded-2xl md:w-[40%] w-full bg-gray-400 bg-clip-padding bg-opacity-10 backdrop-filter backdrop-blur-sm sm:self-start sm:even:self-end my-24 transform hover:scale-105">
@@ -20,6 +22,14 @@ function TimeLineCard({ id, year, title, desc, img }) {
     </div>
   );
 }
+
+TimeLineCard.propTypes = {
+  id: PropTypes.number.isRequired,
+  year: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  desc: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
+};
 
 export default function Timeline() {
   return (
@@ -44,3 +54,15 @@ export default function Timeline() {
     </>
   );
 }
+
+Timeline.propTypes = {
+  timelineEvents: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      year: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+      image: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};

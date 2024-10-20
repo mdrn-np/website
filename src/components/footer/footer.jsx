@@ -1,7 +1,6 @@
 import { FaDiscord, FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 import { MdMailOutline } from "react-icons/md";
 import logo from "../../assets/mdrn-logo-side.png";
-import logo2 from "../../assets/mdrn-logo.png";
 import { navLinks } from "../../data/data";
 
 const socialLinks = [
