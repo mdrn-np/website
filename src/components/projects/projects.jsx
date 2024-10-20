@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { project } from "../../data/data.js";
 import { FaArrowRight } from "react-icons/fa";
 
@@ -15,7 +16,7 @@ function ProjectContainer({ img, name, desc, link, tags }) {
       </div>
 
       <div className="details w-full h-full px-6 group-hover/main:backdrop-blur-[5px] sm:w-[80%]">
-        <h3 className="text-grey-900 font-extrabold text-6xl">{name}</h3>
+        <h3 className="text-gray-900 font-extrabold text-6xl">{name}</h3>
 
         {tags
           ? tags.map((tag) => (
@@ -44,6 +45,14 @@ function ProjectContainer({ img, name, desc, link, tags }) {
     </div>
   );
 }
+
+ProjectContainer.propTypes = {
+  img: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  desc: PropTypes.string,
+  link: PropTypes.string,
+  tags: PropTypes.arrayOf(PropTypes.string),
+};
 
 export default function Projects() {
   return (
