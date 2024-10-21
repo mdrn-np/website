@@ -1,0 +1,4 @@
+.swiper-slide-active .detailContainer {
+  border-color: #932432;
+  transition: ease-in-out;
+}

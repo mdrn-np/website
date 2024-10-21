@@ -1,9 +1,8 @@
-import analytics from './images/analytics.png'
-import openSource from './images/open-source.png'
-import working from './images/networking.png'
-import wallet from './images/wallet.png'
-import tea from './images/cup-of-drink.png'
-
+import analytics from "./images/analytics.png";
+import openSource from "./images/open-source.png";
+import working from "./images/networking.png";
+import wallet from "./images/wallet.png";
+import tea from "./images/cup-of-drink.png";
 
 export const navLinks = [
   {
@@ -35,7 +34,7 @@ export const project = [
   },
   {
     image: "https://picsum.photos/",
-    name: "Something",
+    name: "Name",
     tags: ["tag1", "tag2"],
     description: "Cool project",
     link: "https://google.com",
@@ -62,7 +61,6 @@ export const data = [
     image: working,
   },
 ];
-
 
 export const timelineEvents = [
   {
@@ -91,18 +89,75 @@ export const sponsers = [
   },
   {
     id: 2,
-    image: tea ,
+    image: tea,
     desc: "You will have the opportunity to sponsor and participate in our events.",
   },
   {
     id: 3,
-    image: wallet ,
+    image: wallet,
     desc: "You will have access to our network of professionals and students.",
   },
   {
     id: 4,
-    image: tea ,
+    image: tea,
     desc: "You will be able to promote your products and services to our members.",
   },
+];
 
-]
+export const memberList = [
+  {
+    name: "John Doe",
+    icon: "https://i.pinimg.com/originals/99/13/21/991321fbfeb436efd0fd49717fb7027a.jpg",
+    post: "President",
+    socials: [
+      {
+        name: "facebook",
+        link: "https://facebook.com",
+      },
+    ],
+  },
+  {
+    name: "John Doe",
+    icon: "https://i.pinimg.com/originals/99/13/21/991321fbfeb436efd0fd49717fb7027a.jpg",
+    post: "President",
+    socials: [
+      {
+        name: "facebook",
+        link: "https://facebook.com",
+      },
+    ],
+  },
+  {
+    name: "John Doe",
+    icon: "https://i.pinimg.com/originals/99/13/21/991321fbfeb436efd0fd49717fb7027a.jpg",
+    post: "President",
+    socials: [
+      {
+        name: "facebook",
+        link: "https://facebook.com",
+      },
+    ],
+  },
+  {
+    name: "John Doe",
+    icon: "https://i.pinimg.com/originals/99/13/21/991321fbfeb436efd0fd49717fb7027a.jpg",
+    post: "President",
+    socials: [
+      {
+        name: "facebook",
+        link: "https://facebook.com",
+      },
+    ],
+  },
+  {
+    name: "John Doe",
+    icon: "https://i.pinimg.com/originals/99/13/21/991321fbfeb436efd0fd49717fb7027a.jpg",
+    post: "President",
+    socials: [
+      {
+        name: "facebook",
+        link: "https://facebook.com",
+      },
+    ],
+  },
+];
