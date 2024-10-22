@@ -1,0 +1,8 @@
+.swiper-slide-active .testimonialContainer {
+  border-color: #932432;
+  transition: ease-in-out;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #932432;
+}
