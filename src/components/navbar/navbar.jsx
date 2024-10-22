@@ -1,5 +1,5 @@
 import { navLinks } from "../../data/data";
-import logo from "../../assets/mdrn-logo-side.png";
+import logo from "../../images/mdrn-logo-side.png";
 import { useState, useEffect } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCloseOutline } from "react-icons/io5";
