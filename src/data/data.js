@@ -1,8 +1,9 @@
-import analytics from "./images/analytics.png";
-import openSource from "./images/open-source.png";
-import working from "./images/networking.png";
-import wallet from "./images/wallet.png";
-import tea from "./images/cup-of-drink.png";
+import analytics from "../images/analytics.png";
+import openSource from "../images/open-source.png";
+import working from "../images/networking.png";
+import wallet from "../images/wallet.png";
+import tea from "../images/cup-of-drink.png";
+import gama from '../images/gama.png'
 
 export const navLinks = [
   {
@@ -25,12 +26,12 @@ export const navLinks = [
 
 export const project = [
   {
-    image: "https://picsum.photos/",
-    name: "Name",
-    tags: ["tag1", "tag2"],
+    image: gama,
+    name: "Gama ࠂ ",
+    tags: ["#Chrome Extention", "#AI", "#ML"],
     description:
-      "A biggggg description of the project. This project aids your comunity with every little possible things.",
-    link: "https://google.com",
+      "A browser extension that empowers users to navigate the web with confidence by detecting and warning them about phishing sites, fake reviews, and other online threats using machine learning & AI.",
+    link: "https://github.com/mdrn-np/gama",
   },
   {
     image: "https://picsum.photos/",

@@ -1,6 +1,7 @@
 import "./animation.css";
 import { sponsers } from "../../data/data";
 import Tilt from "react-parallax-tilt";
+import "../../App.css";
 
 export default function SponserIcon() {
   return (

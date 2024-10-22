@@ -7,6 +7,7 @@ import Timeline from "./components/timeline/timeline";
 import Sponsers from "./components/sponsers/sponser";
 import Footer from "./components/footer/footer";
 import Members from "./components/members/members";
+import TechStack from "./components/techstack/techstack";
 import Testimonial from "./components/testimonials/testimonial";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Timeline />
       <Sponsers />
       <Members />
+      <TechStack />
       <Testimonial />
       <Footer />
     </>
