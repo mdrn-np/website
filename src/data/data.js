@@ -4,6 +4,7 @@ import working from "../images/networking.png";
 import wallet from "../images/wallet.png";
 import tea from "../images/cup-of-drink.png";
 import gama from '../images/gama.png'
+import sansi from '../images/sansi_placeholder.png'
 
 export const navLinks = [
   {
@@ -34,7 +35,7 @@ export const project = [
     link: "https://github.com/mdrn-np/gama",
   },
   {
-    image: "https://picsum.photos/",
+    image: sansi,
     name: "Name",
     tags: ["tag1", "tag2"],
     description: "Cool project",

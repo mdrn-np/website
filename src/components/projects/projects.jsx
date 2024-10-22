@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import { project } from "../../data/data.js";
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowRight, FaGithub } from "react-icons/fa";
 
 function ProjectContainer({ img, name, desc, link, extra_link, tags }) {
   return (
-    <div className="p-4 md:p-6 flex flex-col sm:flex-row gap-4 sm:gap-8 h-full bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl shadow-lg transition-transform duration-300 ease-in-out hover:bg-opacity-20 hover:shadow-2xl">
+    <div className="p-4 md:p-6 flex flex-col sm:flex-row gap-4 sm:gap-8 h-full shadow-lg bg-gray-400 bg-clip-padding bg-opacity-10 backdrop-filter backdrop-blur-sm transition-transform duration-300 ease-in-out hover:bg-opacity-20 hover:shadow-2xl">
       <div className="relative rounded-lg w-full sm:w-[40%] lg:w-1/3 overflow-hidden aspect-square">
         <a href={link} target="_blank" rel="noopener noreferrer" className="group">
           <img
