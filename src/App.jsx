@@ -8,6 +8,7 @@ import Sponsers from "./components/sponsers/sponser";
 import Footer from "./components/footer/footer";
 import Members from "./components/members/members";
 import TechStack from "./components/techstack/techstack";
+import Testimonial from "./components/testimonials/testimonial";
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
       <Timeline />
       <Sponsers />
       <Members />
-      <TechStack/>
+      <TechStack />
+      <Testimonial />
       <Footer />
     </>
   );
