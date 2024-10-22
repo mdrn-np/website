@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types';
 import { project } from "../../data/data.js";
 import { FaArrowRight } from "react-icons/fa";
+import "../../App.css";
+
 
 function ProjectContainer({ img, name, desc, link, tags }) {
   return (

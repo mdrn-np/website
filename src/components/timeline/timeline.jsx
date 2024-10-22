@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types';
 import { timelineEvents } from "../../data/data";
 import "./timeline.css";
+import "../../App.css";
+
 
 // eslint-disable-next-line no-unused-vars
 function TimeLineCard({ id, year, title, desc, img }) {

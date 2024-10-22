@@ -1,13 +1,14 @@
 import { memberList } from "../../data/data";
 import { FaGithub, FaFacebookF, FaInstagram } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "./members.css";
+
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
+import "../../App.css";
 
 const socialIcons = {
   facebook: <FaFacebookF />,

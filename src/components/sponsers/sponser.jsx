@@ -1,5 +1,6 @@
 import SponserDetail from "./sponserDetail";
 
+
 export default function Sponsers() {
   return (
     <section className="pb-[300px] py-16">

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import Tilt from 'react-parallax-tilt';
-import "./cards.css";
+import "../../App.css";
 
 export default function CardDetail({ title, text, image }) {
   return (
