@@ -2,7 +2,6 @@ import { memberList } from "../../data/data";
 import { FaGithub, FaFacebookF, FaInstagram } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -42,9 +41,12 @@ function MembersCard({ name, pfp, post, socials }) {
 export default function Members() {
   return (
     <div className="my-24">
-      <h1 className="heading text-center my-8">
-        Meet the team behind the club
-      </h1>
+      <div>
+        <h1 className="heading text-center my-8 block sm:hidden">Our Team !</h1>
+        <h1 className="heading text-center my-8 hidden sm:block">
+          Meet the team behind the club!
+        </h1>
+      </div>
       <Swiper
         slidesPerView={2}
         spaceBetween={40}

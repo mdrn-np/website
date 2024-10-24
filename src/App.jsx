@@ -19,10 +19,10 @@ function App() {
       <ParticlesComponent id="particles" />
       <Hero />
       <CardSection />
+      <Members />
       <Projects />
       <Timeline />
       <Sponsers />
-      <Members />
       <TechStack />
       <Testimonial />
       <Footer />
