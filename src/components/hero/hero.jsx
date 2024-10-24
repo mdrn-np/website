@@ -13,7 +13,7 @@ export default function Hero() {
     <div className="flex justify-center items-center min-h-screen pt-16 overflow-hidden">
       <div className="flex flex-col md:flex-row items-center p-2 max-w-4xl w-full">
         <div className="md:w-1/2 p-2">
-          <h1 className="heading font-bold text-center md:text-left">
+          <h1 className="heading font-bold cursor-none text-center md:text-left">
             <span>Tech For Tomorrow</span>
             <span className="block"> Actions for Today</span>
           </h1>

@@ -9,10 +9,12 @@ import Footer from "./components/footer/footer";
 import Members from "./components/members/members";
 import TechStack from "./components/techstack/techstack";
 import Testimonial from "./components/testimonials/testimonial";
+import Cursor from "./components/customCursor/customCursor";
 
 function App() {
   return (
     <>
+      <Cursor/>
       <Navbar />
       <ParticlesComponent id="particles" />
       <Hero />
