@@ -27,7 +27,7 @@ const socialLinks = [
 ];
 export default function Footer() {
   return (
-    <div className="h-auto sm:mx-[-8rem] relative rounded-lg shadow-lg bg-gray-400 bg-clip-padding bg-opacity-10  backdrop-filter backdrop-blur-sm px-8 sm:px-32 py-20">
+    <div className="h-auto mb-[-7px] sm:mx-[-3rem] relative bottom-0 rounded-lg shadow-lg bg-gray-400 bg-clip-padding bg-opacity-10  backdrop-filter backdrop-blur-sm px-8 sm:px-32 py-10">
       <div className="flex flex-col gap-8">
         <div className="flex flex-col md:flex-row justify-between">
           <div className="mb-10">
@@ -40,7 +40,9 @@ export default function Footer() {
             </p>
           </div>
           <div className="contact text-secondary w-[40%] flex flex-col md:content-end flex-wrap">
-            <h3 className="text-2xl mb-2 font-extrabold">Contact Us</h3>
+            <h3 className="text-2xl max-[400px]:leading-3 min-[400px]:mb-2 font-extrabold text-left">
+              Contact Us
+            </h3>
             <ul>
               <li className="flex flex-row items-center justify-start gap-2">
                 <MdMailOutline /> <a href="http://">mdrn@social.com?</a>
@@ -86,7 +88,7 @@ export default function Footer() {
           </div>
         </div>
         <hr />
-        <h3 className="text-gray-500 text-center text-xl justify-end">
+        <h3 className="text-gray-500 text-center justify-end">
           Copyright &copy; 2024 MDRN Nepal{" "}
         </h3>
       </div>

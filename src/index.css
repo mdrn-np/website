@@ -4,7 +4,7 @@
 
 @layer base {
   * {
-    /* @apply box-border; */
+    @apply box-border;
   }
 
   body {
@@ -16,6 +16,6 @@
   }
 
   .heading {
-    @apply text-3xl lg:text-5xl tracking-normal;
+    @apply text-2xl sm:text-3xl md:text-5xl tracking-normal;
   }
 }
