@@ -1,54 +1,58 @@
 .heading {
-    @apply text-[#484848] text-5xl font-bold tracking-widest cursor-pointer;
+  @apply text-[#484848] text-5xl font-bold tracking-widest cursor-pointer;
 }
 
 .heading span {
-    @apply transition-all duration-500 ease-linear relative;
+  @apply transition-all duration-500 ease-linear relative;
 }
 
-.heading span:nth-child(1)::after {
-    content: "";
-    font-size: 0.01em;
-    position: absolute;
-    top: 0; 
-    transition: font-size 0.3s ease-in-out; 
+.heading span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  opacity: 0;
+}
+
+.heading span:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  opacity: 1;
 }
 
 .heading:hover span:nth-child(1)::after {
-    font-size: 1em;
-}
-
-.heading:hover span:nth-child(1) {
-    @apply mx-[10px];
-}
-
-.heading:hover span:nth-child(2) {
-    @apply mx-[10px];
+  font-size: 1em;
 }
 
 :root {
-    --accent: #3C1874;
-    --britsec: #DE354C;
+  --accent: #3c1874;
+  --britsec: #de354c;
 }
 
-.heading:hover span:nth-child(1) {
-    color: var(--accent);
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+.heading span:nth-child(1):hover {
+  color: var(--accent);
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
 }
 
-.heading:hover span:nth-child(2) {
-    color: var(--britsec);
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+.heading span:nth-child(2):hover {
+  color: var(--britsec);
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
 }
 .expand-hr {
-    width: 0;
-    height: 2px;
-    background-color: #000;
-    border: none;
-    transition: width 1s ease-in-out;
-  }
-  
-  .expand-hr.expanded {
-    width: 90%;
-    background-color: #3C1874;
-  }
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  border: none;
+  transition: width 1s ease-in-out;
+}
+
+.expand-hr.expanded {
+  width: 90%;
+  background-color: #3c1874;
+}
