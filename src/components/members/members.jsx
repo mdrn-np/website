@@ -18,7 +18,7 @@ const socialIcons = {
 
 function MembersCard({ name, pfp, post, socials }) {
   return (
-    <div className="detailContainer w-auto rounded-xl p-2 pb-4 flex flex-col justify-center items-center border-2 border-gray-300 shadow-lg bg-gray-100 bg-clip-padding bg-opacity-10  backdrop-filter backdrop-blur-sm">
+    <div className="detailContainer w-auto rounded-xl p-2 pb-4 flex flex-col justify-center items-center border-2 border-gray-300 shadow-lg bg-gray-400 bg-clip-padding bg-opacity-10  backdrop-filter backdrop-blur-sm cursor-none">
       <img
         src={pfp}
         alt=""
