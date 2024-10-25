@@ -65,19 +65,17 @@ export default function Timeline() {
         className="timeline relative flex flex-col flex-wrap gap-6 items-center justify-center my-16 max-md:pl-10"
       >
         <div
-          className="absolute w-1 h-full"
+          className="absolute w-1 h-full left-1/2 max-md:left-4 max-md:transform-none"
           style={{
             background: `linear-gradient(to bottom, white ${ballPosition}%, purple 0%)`,
-            left: "50%",
             transform: "translateX(-50%)",
           }}
         ></div>
         <div
           ref={ballRef}
-          className="absolute w-4 h-4 bg-purple-500 rounded-full transition-transform duration-300 ease-in-out"
+          className="absolute w-4 h-4 bg-purple-500 rounded-full transition-transform duration-300 ease-in-out left-1/2 max-md:left-4 max-md:transform-none"
           style={{
             top: `${ballPosition}%`,
-            left: "50%",
             transform: "translateX(-50%)",
             boxShadow: "0 0 10px 2px rgba(128, 0, 128, 0.7)",
           }}
