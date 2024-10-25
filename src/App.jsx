@@ -19,7 +19,7 @@ function App() {
       <Hero />
       <CardSection />
       <Members />
-      <Projects />
+      <Projects   />
       <Timeline />
       <TechStack />
       <Testimonial />

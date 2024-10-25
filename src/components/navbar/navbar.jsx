@@ -3,7 +3,8 @@ import logo from "../../images/mdrn-logo-side.png";
 import { useState, useEffect } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCloseOutline } from "react-icons/io5";
-import useIsMounted from "./useIsMounted"; // Adjust the import path as needed
+import useIsMounted from "./useIsMounted";
+import { Link } from "react-scroll";
 import "./navbar.css";
 
 export default function NavBar() {
@@ -57,14 +58,19 @@ export default function NavBar() {
           } basis-1/2 flex-col lg:flex-row lg:flex gap-1 justify-center max-[1020px]:p-4 max-[1020px]:fixed max-[1020px]:top-24 max-[1020px]:left-[10%] bg-secondary lg:bg-transparent w-[80%]`}
         >
           {navLinks.map((navItems) => (
-            <li
-              key={navItems.id}
-              className="max-[1020px]:hover:bg-secondary text-primary lg:text-black lg:hover:text-secondary w-full flex justify-center items-center h-8 transition-all duration-300 transform hover:scale-105"
-            >
-              <a href={navItems.id}>
-                <p>{navItems.title}</p>
-              </a>
-            </li>
+             <li
+             key={navItems.id}
+             className="max-[1020px]:hover:bg-secondary text-primary lg:text-black lg:hover:text-secondary w-full flex justify-center items-center h-8 transition-all duration-300 transform hover:scale-105"
+           >
+             <Link
+               to={navItems.id} 
+               smooth={true}
+               duration={500} 
+               offset={-350} 
+             >
+               <p>{navItems.title}</p>
+             </Link>
+           </li>
           ))}
         </ul>
         <div className="flex items-center justify-center">
