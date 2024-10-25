@@ -49,7 +49,7 @@ export default function TechStack() {
               const x2 = `${setIndex % 2 === 0 ? 25 : 75}%`;
               const y2 = `${Math.floor(setIndex / 2) * 25 + 12.5}%`;
               const midX = (parseFloat(x1) + parseFloat(x2)) / 2;
-              const midY = (parseFloat(y1) + parseFloat(y2)) / 2 - 10; // Adjust for bending
+              const midY = (parseFloat(y1) + parseFloat(y2)) / 2 - 10;
 
               return (
                 <path
@@ -93,7 +93,7 @@ export default function TechStack() {
                 src={logo}
                 alt="mdrn logo"
                 draggable="false"
-                className="w-full no-drag h-auto"
+                className="custom w-full no-drag h-auto"
               />
             </span>
           </Tilt>

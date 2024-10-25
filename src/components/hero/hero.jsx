@@ -39,7 +39,7 @@ export default function Hero() {
           <img
             src="https://via.placeholder.com/500"
             alt="Innovative Tech"
-            className="rounded-lg shadow-lg w-full"
+            className="custom rounded-lg shadow-lg w-full"
           />
           <button className="bg-white group py-2 px-4 rounded-md text-md items-center gap-2 cursor-pointer transition-backgroundColor duration-300 ease-in-out disabled:contrast-75 border text-black focus:border bg-surface border-borderSoft hover:contrast-75 flex mx-auto lg:ml-0 w-36 h-10 mt-4 md:mt-0 md:hidden">
             <span className="transition-all duration-300 transform group-hover:mr-1 font-semibold">

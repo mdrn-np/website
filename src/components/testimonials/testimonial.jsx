@@ -36,7 +36,7 @@ export default function Testimonial() {
         {testimonialData.map((item) => {
           const { name, detail, picture, testimonial } = item;
           return (
-            <SwiperSlide className="flex justify-center items-center">
+            <SwiperSlide className="custom flex justify-center items-center">
               <TestimonialCards
                 name={name}
                 info={detail}

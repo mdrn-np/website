@@ -7,7 +7,7 @@ import "../../App.css";
 function TimeLineCard({ id, year, title, desc, img }) {
   return (
     <div
-      className={`group cardContainer rounded-xl w-full min-[881px]:w-[45%] shrink-0 grow-0 bg-gray-400 bg-clip-padding bg-opacity-10 backdrop-filter backdrop-blur-sm sm:self-start sm:even:self-end my-12 p-6 shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out`} // Added padding and shadow
+      className={`group cardContainer custom rounded-xl w-full min-[881px]:w-[45%] shrink-0 grow-0 bg-gray-400 bg-clip-padding bg-opacity-10 backdrop-filter backdrop-blur-sm sm:self-start sm:even:self-end my-12 p-6 shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out`} // Added padding and shadow
       dataBeforeText={title}
     >
       <img src={`${img}`} alt="" className="rounded-t-xl w-full mb-4" />
@@ -67,14 +67,14 @@ export default function Timeline() {
         <div
           className="absolute w-1 h-full"
           style={{
-            background: `linear-gradient(to bottom, white ${ballPosition}%, purple 0%)`,
+            background: `linear-gradient(to bottom, white ${ballPosition}%, #932432 0%)`,
             left: "50%",
             transform: "translateX(-50%)",
           }}
         ></div>
         <div
           ref={ballRef}
-          className="absolute w-4 h-4 bg-purple-500 rounded-full transition-transform duration-300 ease-in-out"
+          className="absolute w-4 h-4 bg-secondary rounded-full transition-transform duration-300 ease-in-out"
           style={{
             top: `${ballPosition}%`,
             left: "50%",
