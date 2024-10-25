@@ -1,12 +1,17 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import { project } from "../../data/data.js";
 import { FaArrowRight, FaGithub } from "react-icons/fa";
 
 function ProjectContainer({ img, name, desc, link, extra_link, tags }) {
   return (
     <div className="p-4 md:p-6 flex flex-col sm:flex-row gap-4 sm:gap-8 h-full shadow-lg bg-gray-400 bg-clip-padding bg-opacity-10 backdrop-filter backdrop-blur-sm transition-transform duration-300 ease-in-out hover:bg-opacity-20 hover:shadow-2xl">
-      <div className="relative rounded-lg w-full sm:w-[40%] lg:w-1/3 overflow-hidden aspect-square">
-        <a href={link} target="_blank" rel="noopener noreferrer" className="group">
+      <div className="projectContainer relative rounded-lg w-full sm:w-[40%] lg:w-1/3 overflow-hidden aspect-square">
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group"
+        >
           <img
             alt={`${name} thumbnail`}
             loading="lazy"
@@ -17,7 +22,7 @@ function ProjectContainer({ img, name, desc, link, extra_link, tags }) {
             src={img}
           />
           <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
-            <FaGithub size={80}/> <FaArrowRight/>
+            <FaGithub size={80} /> <FaArrowRight />
           </div>
         </a>
       </div>
@@ -27,15 +32,19 @@ function ProjectContainer({ img, name, desc, link, extra_link, tags }) {
             <span
               key={tag}
               className={`rounded-sm font-medium text-white py-1 px-2 uppercase text-xs sm:text-sm transition-colors ease-in-out duration-300 tracking-wide ${
-                index % 2 === 0 ? 'bg-blue-500' : 'bg-green-500'
+                index % 2 === 0 ? "bg-blue-500" : "bg-green-500"
               }`}
             >
               {tag}
             </span>
           ))}
         </div>
-        <p className="text-xl sm:text-2xl tracking-wide text-textPrimary font-bold">{name}</p>
-        <p className="text-sm sm:text-md text-textSecondary w-full lg:w-3/4">{desc}</p>
+        <p className="text-xl sm:text-2xl tracking-wide text-textPrimary font-bold">
+          {name}
+        </p>
+        <p className="text-sm sm:text-md text-textSecondary w-full lg:w-3/4">
+          {desc}
+        </p>
         <div className="mt-4 sm:mt-10 mb-3 sm:mb-4 flex flex-col sm:flex-row gap-2 sm:gap-4 items-center sm:items-start">
           <a
             href={link}
@@ -89,7 +98,9 @@ export default function Projects() {
           const { image, name, tags, description, link, extra_link } = details;
 
           return (
-            <div key={name} className="mb-8"> {/* Added margin-bottom for spacing */}
+            <div key={name} className="mb-8">
+              {" "}
+              {/* Added margin-bottom for spacing */}
               <ProjectContainer
                 img={image}
                 name={name}
