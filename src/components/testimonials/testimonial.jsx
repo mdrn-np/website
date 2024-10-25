@@ -31,7 +31,7 @@ export default function Testimonial() {
           dynamicBullets: true,
         }}
         modules={[Pagination]}
-        className="w-[80%]"
+        className="testimonials w-[80%]"
       >
         {testimonialData.map((item) => {
           const { name, detail, picture, testimonial } = item;

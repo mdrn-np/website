@@ -59,8 +59,29 @@ body {
 .projectContainer,
 .cardContainer,
 .sdiv,
+.testimonials,
+.members,
 .rowDiv {
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
+}
+
+@media screen and (min-width: 880px) {
+  @keyframes slideDown {
+    from {
+      opacity: 0.2;
+      top: 40%;
+    }
+    to {
+      opacity: 1;
+      top: 60%;
+    }
+  }
+  .cardContainer,
+  .cardContainer::before {
+    animation: slideDown linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
 }
