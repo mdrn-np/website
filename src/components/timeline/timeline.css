@@ -1,24 +1,32 @@
-.timeline::before {
-  height: 100%;
-  width: 5px;
-  background-color: red;
-}
-
-.cardContainer {
-  position: relative;
-  overflow: hidden;
-}
-
-.details {
-  opacity: 0;
-  max-height: 0;
-  transform: translateY(20px);
-  transition: opacity 0.3s ease, max-height 0.3s ease, transform 0.3s ease;
-}
-
 .group:hover .details {
   opacity: 1;
   max-height: 1000px; /* Large enough to show the content */
   transform: translateY(0);
 }
 
+.cardContainer::before {
+  content: attr(dataBeforeText);
+  color: #932432;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: absolute;
+  top: 60%;
+  right: calc(-100% + 13px);
+  border-left: 6px solid #932432;
+  padding-left: 47px;
+}
+
+.cardContainer:nth-child(even)::before {
+  width: 100%;
+  border-left: none;
+  border-right: 6px solid #932432;
+  right: calc(100% + 35px);
+  padding-right: 47px;
+}
+
+@media screen and (max-width: 880px) {
+  .cardContainer::before {
+    display: none;
+  }
+}
