@@ -2,3 +2,13 @@
   border-color: #932432;
   transition: ease-in-out;
 }
+.swiper-slide {
+  transition: transform 0.3s, opacity 0.3s, filter 0.3s;
+  opacity: 0.5;
+  filter: blur(5px);
+}
+
+.swiper-slide-active {
+  opacity: 1;
+  filter: blur(0);
+}

@@ -4,15 +4,17 @@ import working from "../images/networking.png";
 import gama from "../images/gama.png";
 import sansi from "../images/sansi_placeholder.png";
 import gaurav from "../images/people/gaurav.png";
-import rg from "../images/people/rg.png";
+import rg from "../images/people/rg.jpg";
 import ankit from "../images/people/ankit.png";
 import arnav from "../images/people/arnav.png";
 import manish from "../images/people/manish.png";
-import saurav from "../images/people/saurav.png";
+import saurav from "../images/people/surav.png";
 import anmol from "../images/people/anmol.png";
 import deeya from "../images/people/deeya.png";
 import shuva from "../images/people/shuva.png";
 import himal from "../images/people/himal.png";
+import conception from "../images/conception.png";
+import second from "../images/second.png";
 
 export const navLinks = [
   {
@@ -44,10 +46,11 @@ export const project = [
   },
   {
     image: sansi,
-    name: "Name",
-    tags: ["tag1", "tag2"],
-    description: "Cool project",
-    link: "https://google.com",
+    name: "Sansi",
+    tags: ["#Under Development", "#Productivity", "#Students"],
+    description:
+      "Sansi is a productivity tool designed to help students learn more effectively through spaced repetition. It enables users to create custom flashcards, track their progress, and review information at ideal intervals to boost retention.",
+    link: "https://github.com/mdrn-np/gama",
   },
 ];
 
@@ -75,75 +78,120 @@ export const data = [
 export const timelineEvents = [
   {
     id: 1,
-    year: "2024",
+    year: "2024 October",
     title: "Start of our jounery",
     description:
-      "This is when we got the idea to start our journey of MDRN. Working with group of friends we started all this.",
-    image: "https://picsum.photos/",
+      "On October 2024, we formally announced the establishment of MDRN.",
+    image: second,
   },
   {
     id: 2,
-    year: "2024",
-    title: "Something idk.",
+    year: "2024 July",
+    title: "First Idea of MDRN",
     description:
-      "This is when we got the idea to start our journey of MDRN. Working with group of friends we started all this.",
-    image: "https://picsum.photos/",
+      "A Group of like minded friends came together to create a community for open source development, Community service and research.",
+    image: conception,
   },
 ];
 
 export const memberList = [
   {
-    name: "John Doe",
-    icon: "https://i.pinimg.com/originals/99/13/21/991321fbfeb436efd0fd49717fb7027a.jpg",
+    name: "Gaurav Phuyal",
+    icon: gaurav,
     post: "President",
     socials: [
       {
         name: "facebook",
-        link: "https://facebook.com",
+        link: "https://facebook.com/gaurav",
       },
     ],
   },
   {
-    name: "John Doe",
-    icon: "https://i.pinimg.com/originals/99/13/21/991321fbfeb436efd0fd49717fb7027a.jpg",
-    post: "President",
+    name: "Rg Pokhrel",
+    icon: rg,
+    post: "Vice President",
     socials: [
       {
         name: "facebook",
-        link: "https://facebook.com",
+        link: "https://facebook.com/rg",
+      },
+    ],
+  },
+
+  {
+    name: "Himal Khadka",
+    icon: himal,
+    post: "Club Representative",
+    socials: [
+      {
+        name: "facebook",
+        link: "https://facebook.com/himal",
       },
     ],
   },
   {
-    name: "John Doe",
-    icon: "https://i.pinimg.com/originals/99/13/21/991321fbfeb436efd0fd49717fb7027a.jpg",
-    post: "President",
+    name: "Arnav Adhikari",
+    icon: arnav,
+    post: "Resource Manager",
     socials: [
       {
         name: "facebook",
-        link: "https://facebook.com",
+        link: "https://facebook.com/arnav",
       },
     ],
   },
   {
-    name: "John Doe",
-    icon: "https://i.pinimg.com/originals/99/13/21/991321fbfeb436efd0fd49717fb7027a.jpg",
-    post: "President",
+    name: "Deeya Khanal",
+    icon: deeya,
+    post: "Spokesperson",
     socials: [
       {
         name: "facebook",
-        link: "https://facebook.com",
+        link: "https://facebook.com/deeya",
       },
     ],
   },
   {
-    name: "John Doe",
-    icon: "https://i.pinimg.com/originals/99/13/21/991321fbfeb436efd0fd49717fb7027a.jpg",
-    post: "President",
+    name: "Shuva Aashish Gyawali",
+    icon: shuva,
+    post: "Resource Manager",
     socials: [
       {
         name: "facebook",
-        link: "https://facebook.com",
+        link: "https://facebook.com/shuva",
+      },
+    ],
+  },
+  {
+    name: "Anmol Karki",
+    icon: anmol,
+    post: "Sponsorship Director",
+    socials: [
+      {
+        name: "facebook",
+        link: "https://facebook.com/anmol",
+      },
+    ],
+  },
+  {
+    name: "Ankit Chaudhary",
+    icon: ankit,
+    post: "Sgt at Arms",
+    socials: [
+      {
+        name: "facebook",
+        link: "https://facebook.com/ankit",
+      },
+    ],
+  },
+  {
+    name: "Manish Bagale",
+    icon: manish,
+    post: "Secretary",
+    socials: [
+      {
+        name: "facebook",
+        link: "https://facebook.com/manish",
       },
     ],
   },
