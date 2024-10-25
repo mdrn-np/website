@@ -185,6 +185,17 @@ export const memberList = [
     ],
   },
   {
+    name: "Saurav Khatri",
+    icon: saurav,
+    post: "Project Manager",
+    socials: [
+      {
+        name: "facebook",
+        link: "https://facebook.com/saurav",
+      },
+    ],
+  }
+  {
     name: "Manish Bagale",
     icon: manish,
     post: "Secretary",
