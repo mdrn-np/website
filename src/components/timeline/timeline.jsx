@@ -10,7 +10,7 @@ function TimeLineCard({ id, year, title, desc, img }) {
       className={`group cardContainer rounded-xl w-full min-[881px]:w-[45%] shrink-0 grow-0 bg-gray-400 bg-clip-padding bg-opacity-10 backdrop-filter backdrop-blur-sm sm:self-start sm:even:self-end my-12 p-6 shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out`} // Added padding and shadow
       dataBeforeText={title}
     >
-      <img src={`${img}500`} alt="" className="rounded-t-xl w-full mb-4" />
+      <img src={`${img}`} alt="" className="rounded-t-xl w-full mb-4" />
       <h1 className="text-left year text-3xl font-extrabold text-secondary mt-[-1.75rem] px-2 max-[880px]:px-4">
         {year}
       </h1>

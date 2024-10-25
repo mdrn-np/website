@@ -13,8 +13,8 @@ import anmol from "../images/people/anmol.png";
 import deeya from "../images/people/deeya.png";
 import shuva from "../images/people/shuva.png";
 import himal from "../images/people/himal.png";
-import conception from "../images/conception.png";
-import second from "../images/second.png";
+import conception from "../images/conception-image.png";
+import second from "../images/second-image.png";
 
 export const navLinks = [
   {
@@ -194,7 +194,7 @@ export const memberList = [
         link: "https://facebook.com/saurav",
       },
     ],
-  }
+  },
   {
     name: "Manish Bagale",
     icon: manish,
