@@ -7,22 +7,22 @@ const socialLinks = [
   {
     name: "facebook",
     icon: <FaFacebookF />,
-    link: "https://facebook.com",
+    link: "https://facebook.com/mdrn.nepal",
   },
   {
     name: "instagram",
     icon: <FaInstagram />,
-    link: "https://instagram.com",
+    link: "https://instagram.com/mdrn.np",
   },
   {
     name: "youtube",
     icon: <FaYoutube />,
-    link: "https://youtube.com",
+    link: "https://www.youtube.com/@MDRNNepal",
   },
   {
     name: "discord",
     icon: <FaDiscord />,
-    link: "https://discord.com",
+    link: "https://discord.gg/cWwp2w2GwZ",
   },
 ];
 export default function Footer() {
@@ -45,10 +45,12 @@ export default function Footer() {
             </h3>
             <ul>
               <li className="flex flex-row items-center justify-start gap-2">
-                <MdMailOutline /> <a href="http://">mdrn@social.com?</a>
+                <MdMailOutline />{" "}
+                <a href="mailto:info@mdrn.social">info@mdrn.social</a>
               </li>
               <li className="flex flex-row items-center justify-start gap-2">
-                <FaDiscord /> <a href="http://">MDRN Nepal</a>
+                <FaDiscord />{" "}
+                <a href="https://discord.gg/cWwp2w2GwZ">MDRN Nepal</a>
               </li>
             </ul>
           </div>

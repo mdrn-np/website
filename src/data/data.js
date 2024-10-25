@@ -1,10 +1,18 @@
 import analytics from "../images/analytics.png";
 import openSource from "../images/open-source.png";
 import working from "../images/networking.png";
-import wallet from "../images/wallet.png";
-import tea from "../images/cup-of-drink.png";
-import gama from '../images/gama.png'
-import sansi from '../images/sansi_placeholder.png'
+import gama from "../images/gama.png";
+import sansi from "../images/sansi_placeholder.png";
+import gaurav from "../images/people/gaurav.png";
+import rg from "../images/people/rg.png";
+import ankit from "../images/people/ankit.png";
+import arnav from "../images/people/arnav.png";
+import manish from "../images/people/manish.png";
+import saurav from "../images/people/saurav.png";
+import anmol from "../images/people/anmol.png";
+import deeya from "../images/people/deeya.png";
+import shuva from "../images/people/shuva.png";
+import himal from "../images/people/himal.png";
 
 export const navLinks = [
   {
@@ -80,29 +88,6 @@ export const timelineEvents = [
     description:
       "This is when we got the idea to start our journey of MDRN. Working with group of friends we started all this.",
     image: "https://picsum.photos/",
-  },
-];
-
-export const sponsers = [
-  {
-    id: 1,
-    image: wallet,
-    desc: "Your logo will be displayed on our website and promotional materials.",
-  },
-  {
-    id: 2,
-    image: tea,
-    desc: "You will have the opportunity to sponsor and participate in our events.",
-  },
-  {
-    id: 3,
-    image: wallet,
-    desc: "You will have access to our network of professionals and students.",
-  },
-  {
-    id: 4,
-    image: tea,
-    desc: "You will be able to promote your products and services to our members.",
   },
 ];
 
