@@ -2,6 +2,7 @@ import { FaDiscord, FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 import { MdMailOutline } from "react-icons/md";
 import logo from "../../images/mdrn-logo-side.png";
 import { navLinks } from "../../data/data";
+import { Link } from "react-scroll";
 
 const socialLinks = [
   {
@@ -66,7 +67,14 @@ export default function Footer() {
                     className="text-primary lg:text-gray-500 lg:hover:text-secondary w-auto flex justify-center items-center h-8 transition-all duration-300 transform text-2xl"
                   >
                     <a href={navItems.id}>
-                      <p>{navItems.title}</p>
+                    <Link
+               to={navItems.id} 
+               smooth={true}
+               duration={500} 
+               offset={-350} 
+             >
+               <p>{navItems.title}</p>
+             </Link>
                     </a>
                   </li>
                 ))
