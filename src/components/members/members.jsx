@@ -66,6 +66,7 @@ export default function Members() {
           slideShadows: false,
         }}
         modules={[Autoplay, EffectCoverflow]}
+        className="members"
       >
         {memberList.map((memberInfo) => {
           const { name, icon, post, socials } = memberInfo;

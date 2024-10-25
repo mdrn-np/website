@@ -59,6 +59,8 @@ body {
 .projectContainer,
 .cardContainer,
 .sdiv,
+.testimonials,
+.members,
 .rowDiv {
   animation: appear linear;
   animation-timeline: view();
