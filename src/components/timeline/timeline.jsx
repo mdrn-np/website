@@ -67,14 +67,14 @@ export default function Timeline() {
         <div
           className="absolute w-1 h-full left-1/2 max-md:left-4 max-md:transform-none"
           style={{
-            background: `linear-gradient(to bottom, white ${ballPosition}%, purple 0%)`,
+            background: `linear-gradient(to bottom, white ${ballPosition}%, #932432 0%)`,
             transform: "translateX(-50%)",
           }}
         ></div>
         <div
           ref={ballRef}
 
-          className="absolute w-4 h-4 bg-purple-500 rounded-full transition-transform duration-300 ease-in-out left-1/2 max-md:left-4 max-md:transform-none"
+          className="absolute w-4 h-4 bg-secondary rounded-full transition-transform duration-300 ease-in-out left-1/2 max-md:left-4 max-md:transform-none"
 
           style={{
             top: `${ballPosition}%`,

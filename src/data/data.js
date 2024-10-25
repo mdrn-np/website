@@ -102,7 +102,7 @@ export const memberList = [
     socials: [
       {
         name: "facebook",
-        link: "https://facebook.com/gaurav",
+        link: "https://facebook.com/gaa.aaurav",
       },
     ],
   },
@@ -113,7 +113,7 @@ export const memberList = [
     socials: [
       {
         name: "facebook",
-        link: "https://facebook.com/rg",
+        link: "https://facebook.com/NRG.POKHREL",
       },
     ],
   },
@@ -125,7 +125,7 @@ export const memberList = [
     socials: [
       {
         name: "facebook",
-        link: "https://facebook.com/himal",
+        link: "https://www.facebook.com/profile.php?id=100076506851189",
       },
     ],
   },
@@ -136,7 +136,7 @@ export const memberList = [
     socials: [
       {
         name: "facebook",
-        link: "https://facebook.com/arnav",
+        link: "https://facebook.com/arnav.adhikari.927",
       },
     ],
   },
@@ -147,7 +147,7 @@ export const memberList = [
     socials: [
       {
         name: "facebook",
-        link: "https://facebook.com/deeya",
+        link: "https://www.facebook.com/profile.php?id=100077362614319",
       },
     ],
   },
@@ -158,7 +158,7 @@ export const memberList = [
     socials: [
       {
         name: "facebook",
-        link: "https://facebook.com/shuva",
+        link: "https://facebook.com/shuvaaashis.gyawali",
       },
     ],
   },
@@ -169,7 +169,7 @@ export const memberList = [
     socials: [
       {
         name: "facebook",
-        link: "https://facebook.com/anmol",
+        link: "https://www.facebook.com/profile.php?id=61551670834820",
       },
     ],
   },
@@ -180,7 +180,7 @@ export const memberList = [
     socials: [
       {
         name: "facebook",
-        link: "https://facebook.com/ankit",
+        link: "https://facebook.com/1004567ow",
       },
     ],
   },
@@ -191,7 +191,7 @@ export const memberList = [
     socials: [
       {
         name: "facebook",
-        link: "https://facebook.com/saurav",
+        link: "https://facebook.com/whotookmemilk",
       },
     ],
   },
@@ -202,7 +202,7 @@ export const memberList = [
     socials: [
       {
         name: "facebook",
-        link: "https://facebook.com/manish",
+        link: "https://www.facebook.com/profile.php?id=100080499631576",
       },
     ],
   },
