@@ -15,6 +15,9 @@ import shuva from "../images/people/shuva.png";
 import himal from "../images/people/himal.png";
 import conception from "../images/conception-image.png";
 import second from "../images/second-image.png";
+import samir from "../images/people/samir.png";
+import gautam from "../images/people/gautam.jpg";
+import suman from "../images/people/suman.jpg";
 
 export const navLinks = [
   {
@@ -210,27 +213,27 @@ export const memberList = [
 
 export const testimonialData = [
   {
-    name: "Jhon Doe",
-    detail: "ceo of black rock",
+    name: "Samir Phuyal",
+    detail: "CEO & Founder, Bytecare and Karobar",
     picture:
-      "https://i.pinimg.com/originals/99/13/21/991321fbfeb436efd0fd49717fb7027a.jpg",
+      samir,
     testimonial:
-      "very good indeed. worth the investment. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
+      "MDRN Nepal is making a real difference by connecting young talent with tech opportunities and open-source development. Their commitment to knowledge sharing and empowering students is exactly what Nepal needs. I look forward to seeing their continued impact on our tech community.",
   },
   {
-    name: "Jhon Doe",
-    detail: "ceo of black rock",
+    name: "Gautam Phuyal",
+    detail: "Founder, CEO at ECS Tech",
     picture:
-      "https://i.pinimg.com/originals/99/13/21/991321fbfeb436efd0fd49717fb7027a.jpg",
+      gautam,
     testimonial:
-      "very good indeed. worth the investment. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
+      "MDRN Nepal is doing an outstanding job nurturing young talent and fostering open-source collaboration. Their dedication to empowering students and advancing tech education is commendable. I’m excited to see MDRN Nepal shape the future of Nepal’s tech landscape",
   },
   {
-    name: "Jhon Doe",
-    detail: "ceo of black rock",
+    name: "Suman Kattel",
+    detail: "Soial Worker",
     picture:
-      "https://i.pinimg.com/originals/99/13/21/991321fbfeb436efd0fd49717fb7027a.jpg",
+      suman,
     testimonial:
-      "very good indeed. worth the investment. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
+      "MDRN Nepal is making a meaningful impact by empowering young minds and promoting tech education in our communities. Their dedication to knowledge sharing and volunteer work is inspiring. I believe MDRN Nepal will help build a stronger, tech-savvy generation in Nepal.",
   },
 ];
