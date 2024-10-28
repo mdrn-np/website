@@ -13,7 +13,7 @@ function TestimonialCards({ name, info, icon, testimonial }) {
       />
       <h1 className="text-xl font-bold">{name}</h1>
       <h3 className="font-bold text-secondary mb-2">{info}</h3>
-      <p className="text-justify">{testimonial}</p>
+      <p className="text-center">{testimonial}</p>
     </div>
   );
 }
@@ -30,6 +30,11 @@ export default function Testimonial() {
         pagination={{
           dynamicBullets: true,
         }}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: true,
+        }}
+        rewind={true}
         modules={[Pagination]}
         className="testimonials w-[80%]"
       >
