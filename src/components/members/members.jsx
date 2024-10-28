@@ -46,7 +46,12 @@ export default function Members() {
         </h1>
       </div>
       <Swiper
-        slidesPerView={2}
+        slidesPerView={1}
+        breakpoints={{
+          480: {
+            slidesPerView: 2,
+          },
+        }}
         spaceBetween={40}
         centeredSlides={true}
         loop={true}
