@@ -5,7 +5,6 @@ import {
   FaRust,
   FaAws,
   FaDocker,
-  FaBootstrap,
   FaNodeJs,
   FaHtml5,
   FaGit,
@@ -13,9 +12,10 @@ import {
   FaFigma,
   FaGithub,
   FaLinux,
-  FaWindows,
   FaNpm,
 } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { SiDjango } from "react-icons/si";
 import logo from "../../images/mdrn-logo.png";
 import Tilt from "react-parallax-tilt";
 import "../../App.css";
@@ -25,11 +25,11 @@ export default function TechStack() {
     [FaReact, FaPython],
     [FaAws, FaDocker],
     [FaHtml5, FaCss3],
-    [FaBootstrap, FaNodeJs],
+    [RiTailwindCssFill, FaNodeJs],
     [FaGit, FaFigma],
     [FaCode, FaGithub],
     [FaRust, FaNpm],
-    [FaWindows, FaLinux],
+    [SiDjango, FaLinux],
   ];
 
   const rows = [];
