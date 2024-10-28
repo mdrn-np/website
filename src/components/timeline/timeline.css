@@ -12,16 +12,14 @@
   font-weight: bold;
   position: absolute;
   top: 60%;
-  right: calc(-100% + 13px);
-  border-left: 6px solid #932432;
+  right: calc(-100% + 40px);
   padding-left: 47px;
 }
 
 .cardContainer:nth-child(even)::before {
   width: 100%;
   border-left: none;
-  border-right: 6px solid #932432;
-  right: calc(100% + 35px);
+  right: calc(100% + 40px);
   padding-right: 47px;
 }
 
