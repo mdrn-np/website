@@ -1,5 +1,6 @@
 import "./hero.css";
 import { useEffect } from "react";
+import home from "../../images/home.png";
 
 export default function Hero() {
   useEffect(() => {
@@ -37,7 +38,7 @@ export default function Hero() {
         </div>
         <div className="md:w-1/2 p-2">
           <img
-            src="https://via.placeholder.com/500"
+            src={home}
             alt="Innovative Tech"
             className="custom rounded-lg shadow-lg w-full"
           />
